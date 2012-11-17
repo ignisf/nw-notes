@@ -1,12 +1,11 @@
 %%% Local Variables:
 %%% TeX-master: "excercises"
-%%% ispell-check-comments: exclusive
 %%% ispell-local-dictionary: "bg"
 %%% End:
 
 \section{Увод в TCP/IP}
 \subsection{Въпроси относно OSI модела}
-
+\subsubsection{С отговор в свободен текст}
 \begin{q}
   Кой слой е отговорен за конвертирането на данните от каналния слой в
   електрически импулси?
@@ -107,4 +106,167 @@
 
 \begin{q}
   Каква е дължината в битове и в какъв вид се изразява MAC адресът?
+\end{q}
+
+\begin{q}
+  Кой слой създава виртуална верига преди да започне да изпраща данни?
+
+  \rans Транспортният
+\end{q}
+
+\begin{q}
+  Върху кои слоеве е дефиниран Ethernet?
+
+  \rans Канален и физически
+\end{q}
+
+\begin{q}
+  В кой слой се използва логическото адресиране на хостовете в мрежата?
+
+  \rans Мрежовият
+\end{q}
+
+\begin{q}
+  В кой слой се дефинират хардуерните адреси на мрежовите интерфейси на
+  хостовете?
+
+  \rans Каналният
+\end{q}
+
+\subsubsection{С избор на верен отговор}
+\begin{q}
+  Приемащ хост не е успял да получи всички сегменти, чието пристигане трябва да
+  потвърди. Какво може да направи хоста, за да подобри надеждността на
+  комуникационната сесия?
+
+  \begin{enumerate}
+  \item Да изпрати различен номер на изходящ порт.
+  \item Да рестартира виртуалната верига.
+  \item Да намали sequence номера.
+  \item Да намали големината на прозореца.
+  \end{enumerate}
+
+  \rans г
+\end{q}
+
+\begin{q}
+  Когато станция изпрати съобщение до MAC адреса \texttt{ff:ff:ff:ff:ff:ff},
+  към кой вид съобщения може да бъде причислено то?
+
+  \begin{enumerate}
+  \item Unicast
+  \item Multicast
+  \item Anycast
+  \item Broadcast
+  \end{enumerate}
+
+  \rans г
+\end{q}
+
+\begin{q}
+  В кой слой се извършва сегментацията на данните?
+
+  \begin{enumerate}
+  \item Физически
+  \item Канален
+  \item Мрежови
+  \item Транспортен
+  \end{enumerate}
+
+  \rans г
+\end{q}
+
+\begin{q}
+  Маршрутизаторите оперират на слой №\dots, LAN комутаторите оперират на слой
+  №\dots, LAN концентраторите оперират на слой №\dots, текстообработката се
+  извършва в слой №\dots
+
+  \begin{enumerate}
+  \item 3, 3, 1, 7
+  \item 3, 2, 1, никой
+  \item 3, 2, 1, 7
+  \item 2, 3, 1, 7
+  \item 3, 3, 2, никой
+  \end{enumerate}
+
+  \rans в
+\end{q}
+
+\begin{q}
+  Коя е правилната последователност на енкапсулация на данните?
+
+  \begin{enumerate}
+  \item Данни, рамка, пакет, сегмент, бит
+  \item Сегмент, данни, пакет, рамка, бит
+  \item Данни, сегмент, пакет, рамка, бит
+  \item Данни, сегмент, рамка, пакет, бит
+  \end{enumerate}
+
+  \rans в
+\end{q}
+
+\begin{q}
+  За кой слой са характерни потвържденията (acknowledgements), последователното
+  номериране (sequencing) и контрола на потока?
+
+  \begin{enumerate}
+  \item Слой 2
+  \item Слой 3
+  \item Слой 4
+  \item Слой 7
+  \end{enumerate}
+
+  \rans в
+\end{q}
+
+\subsection{Въпроси относно DoD модела}
+\begin{q}
+  Как се отнасят слоевете на DoD модела към слоевете на OSI?
+\end{q}
+
+\begin{q}
+  Идентифицирайте слоя от DoD модела, към който принадлежи всеки един от
+  следните протоколи:
+
+  \begin{itemize}
+  \item Internet Protocol (IP) \rans Интернет
+  \item Telnet \rans Приложен
+  \item FTP \rans Приложен
+  \item SNMP \rans Приложен
+  \item DNS \rans Приложен
+  \item Address Resolution Protocol (ARP) \rans Интернет
+  \item DHCP/BootP \rans Приложен
+  \item Transmission Control Protocol (TCP) \rans Транспортен
+  \item User Datagram Protocol (UDP) \rans Транспортен
+  \item NFS \rans Приложен
+  \item Internet Control Message Protocol (ICMP) \rans Интернет
+  \item Reverse Address Resolution Protocol (RARP) \rans Интернет
+  \item Proxy ARP \rans Интернет
+  \item TFTP \rans Приложен
+  \item SMTP \rans Приложен
+  \item Ethernet \rans Канален
+  \end{itemize}
+\end{q}
+
+\begin{q}
+  Кой от следните са слоеве на DoD модела? (Изберете три.)
+
+  \begin{enumerate}
+  \item Приложен слой
+  \item Сесиен слой
+  \item Транспортен слой
+  \item Интернет слой
+  \item Физически слой
+  \end{enumerate}
+\end{q}
+
+\begin{q}
+  Кой слой от DoD модела е еквивалентен на мрежовия слой от OSI модела?
+
+  \begin{enumerate}
+  \item Приложен
+  \item Транспортен
+  \item Интернет
+  \item Канален
+  \end{enumerate}
 \end{q}
