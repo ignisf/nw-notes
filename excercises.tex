@@ -14,13 +14,14 @@
 \usepackage{libertineotf}
 
 \usepackage{amsmath}
-\newtheorem{pr}{Задача}
-\newtheorem{q}{Въпрос}
+\newtheorem{pr}{Задача}[section]
+\newtheorem{q}{Въпрос}[section]
 \newcommand\ans{Отг.: }
 \newcommand\rans{\hfill\ans}
 \renewcommand{\theenumi}{\alph{enumi}}
 
 \usepackage{hyperref}
+\usepackage{booktabs}
 
 \begin{document}
 
@@ -32,5 +33,6 @@
 \maketitle
 
 \input{excercise-1.tex}
+\input{excercise-2.tex}
 
 \end{document}
