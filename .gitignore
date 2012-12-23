@@ -17,6 +17,8 @@
 *.nlo
 *.out
 *.pdfsync
+*.pdf
+*.xdv
 *.ps
 *.snm
 *.synctex.gz
@@ -25,4 +27,5 @@
 *.maf
 *.mtc
 *.mtc0
-*.~
+*.*~
+\#*\#
