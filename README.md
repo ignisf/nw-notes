@@ -8,7 +8,7 @@
 
 ## Изтегляне в PDF формат
 За да се сдобиете с PDF версия на записките, без да има нужда да компилирате
-изходния код, кликнете [ТУК](https://github.com/ignisf/nw-notes/downloads).
+изходния код, кликнете [ТУК](https://github.com/ignisf/nw-notes/blob/master/excercises.pdf?raw=true).
 
 ## Компилация
 
